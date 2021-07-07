@@ -1,0 +1,16 @@
+{
+  "presets": ["@babel/typescript", "@babel/preset-env", "@babel/preset-react"],
+  "plugins": [
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-syntax-dynamic-import",
+		"transform-dynamic-import",
+    [
+      "babel-plugin-styled-components",
+      {
+        "fileName": false,
+        "ssr": false,
+				"pure": true
+      }
+    ]
+  ]
+}

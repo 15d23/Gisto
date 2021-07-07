@@ -1,0 +1,65 @@
+@import '~normalize.css';
+
+@font-face {
+	font-family: 'Roboto Condensed';
+	font-style: normal;
+	font-weight: 300;
+	src: local('Roboto Condensed Light'), local('RobotoCondensed-Light'),
+	url('../fonts/roboto-condensed-v16-vietnamese_latin_latin-ext_greek_cyrillic-ext_greek-ext_cyrillic-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+	url('../fonts/roboto-condensed-v16-vietnamese_latin_latin-ext_greek_cyrillic-ext_greek-ext_cyrillic-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+	font-family: 'Roboto Condensed';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Roboto Condensed'), local('RobotoCondensed-Regular'),
+	url('../fonts/roboto-condensed-v16-vietnamese_latin_latin-ext_greek_cyrillic-ext_greek-ext_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+	url('../fonts/roboto-condensed-v16-vietnamese_latin_latin-ext_greek_cyrillic-ext_greek-ext_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+	font-family: 'Roboto Condensed';
+	font-style: normal;
+	font-weight: 700;
+	src: local('Roboto Condensed Bold'), local('RobotoCondensed-Bold'),
+	url('../fonts/roboto-condensed-v16-vietnamese_latin_latin-ext_greek_cyrillic-ext_greek-ext_cyrillic-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+	url('../fonts/roboto-condensed-v16-vietnamese_latin_latin-ext_greek_cyrillic-ext_greek-ext_cyrillic-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+body,
+html {
+  font-family: 'Roboto Condensed', 'Helvetica Neue', 'Arial Unicode MS, Arial', 'Arial', 'sans-serif';
+  font-weight: 300;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#gisto {
+  -webkit-user-select: none;
+  -webkit-app-region: drag;
+  /* Smoother startup */
+  animation: fadein 1s;
+}
+
+#gisto .markdown-body {
+  -webkit-user-select: text;
+}
+
+.Toastify__toast--success {
+	background-color: cadetblue;
+}
+.Toastify__toast--error {
+	background-color: tomato;
+}
+.Toastify__toast--info {
+	background-color: #3F84A8;
+}
+.Toastify__toast--warning {
+	background-color: #e0b01e;
+}
